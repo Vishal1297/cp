@@ -1,1 +1,3 @@
-# programming-contests
+# cp
+
+  Competitive Programming Solutions
