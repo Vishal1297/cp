@@ -15,18 +15,16 @@ public class AreNumbersAscending {
         String[] words = s.split(" ");
         int prevNum = 0;
         boolean isAscending = false;
-        for (int i = 0; i < words.length; i++) {
-            if (isInteger(words[i])){
-                int curr = Integer.parseInt(words[i]);
+        for (String word : words) {
+            if (isInteger(word)) {
+                int curr = Integer.parseInt(word);
                 if (curr <= prevNum) {
                     isAscending = false;
                     break;
-                }else {
+                } else {
                     isAscending = true;
                 }
                 prevNum = curr;
-            }else {
-                System.out.println("not int : "+words[i]);
             }
         }
         return isAscending;
